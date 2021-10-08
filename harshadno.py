@@ -1,10 +1,11 @@
-num=int(input("enter the no."))
-i=1
-while i<=num:
-    if num%i==0 :
-        print(num+i,"it is harshad number")
-        break
-    else:
-        print("it is not harshad number")
-    i=i+1
+n=int(input("enter the no."))
+sum = 0
+temp = n
+while temp > 0 :
+    sum = sum + temp%10
+    temp = temp // 10
+if n%sum==0 :
+    print("yes, harshad no.")
+else:
+    print("no,harshad no.")
     
